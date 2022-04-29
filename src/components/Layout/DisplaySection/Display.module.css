@@ -1,0 +1,122 @@
+.wrapper {
+    max-width: 1440px;
+    margin: 10px auto;
+  }
+  
+
+  .main-image {
+    width: 100%;
+    height: 25rem;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #ebebeb;
+  }
+   
+   .main-image-img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    /* transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem); */
+    border-radius: 30px;
+    position: absolute;
+    
+  }
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .main-image-img.top{
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: -2s;
+    animation-direction: alternate;
+  }
+  .main-image-img.bottom{
+  animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+}
+
+.main-image-img.bottom2{
+  animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+}
+
+  .featured-title .wrapper{
+    height: 450px;
+    border: 1px solid #ebebeb;
+    margin-top: 30px;
+    padding: 5px 30px;
+    /* background-image: url('../img/colin-lloyd-BI-_6HaZkkQ-unsplash.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+}  
+
+.button{
+  color: white;
+  position: absolute;
+  bottom: 100px;
+  left: 16px;
+  padding: 20px 10px;
+  width: 350px;
+  background-image: linear-gradient(to right, #e7cb3e 0%,#e4d173 51%, #e4d173 100%);
+  /* background-color: #e7cb3e; */
+  border-radius: 50px;
+  font-size: 1.7rem;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 0 30px rgb(44, 42, 42);
+  transition: 0.5s;
+}
+
+
+
+
+ .button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+.display-Text{
+  position: absolute;
+  color: white;
+  top: 60px;
+  right: 30px;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  background-image: url('../../../assets/DisplayAssets/i-like-food.svg');
+  /* background-color: #fff; */
+  background-position: center;
+  background-size: contain;
+  border-radius: 20px;
+  padding: 20px ;
+  
+}
+
+.display-Text-span{
+  color: #e7cb3e;
+}
+
+

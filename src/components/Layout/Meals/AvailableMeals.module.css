@@ -1,0 +1,14 @@
+.wrapper {
+    max-width: 1440px;
+    margin: 10px auto;
+  }
+  
+.ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255,255,255, 0.4);
+    border-radius: 10px;
+    /* margin-top:  20px; */
+    /* padding: 20px 20px; */
+}

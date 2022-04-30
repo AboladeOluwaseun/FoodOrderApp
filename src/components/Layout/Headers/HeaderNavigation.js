@@ -5,19 +5,19 @@ const HeaderNavigation = () => {
   return (
     <nav className={styles['nav-section']}>
       <a className={styles['nav-section-a']} href="/">
-        Collections
+        Homes
       </a>
       <a className={styles['nav-section-a']} href="/">
-        Men
+        Dishes
       </a>
       <a className={styles['nav-section-a']} href="/">
-        Women
+        Menu
       </a>
       <a className={styles['nav-section-a']} href="/">
-        About
+        Review
       </a>
       <a className={styles['nav-section-a']} href="/">
-        Contact
+        Order
       </a>
     </nav>
   );

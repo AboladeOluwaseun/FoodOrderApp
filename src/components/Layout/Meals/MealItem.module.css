@@ -5,7 +5,29 @@
     width: 20rem;
     height: 20rem;
     border-radius: 10px;
+    cursor: pointer;
 }
+
+.meal-item-div:hover{
+    
+    animation: rotation 1s 1 linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotateY(180deg) scale(1,1);
+     
+    }
+    to {
+      transform: rotateY(359deg) scale(1.2,1.2);
+      
+    }
+
+    
+   
+    
+}
+
 
 .meal-item-img{
   width: 100%;

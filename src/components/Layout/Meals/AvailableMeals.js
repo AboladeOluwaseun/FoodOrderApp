@@ -6,16 +6,16 @@ const AvailableMeals = () => {
   return (
     <div className={styles.wrapper}>
       <ul className={styles.ul}>
-        <li>
+        <li className={styles.li}>
           <MealItem></MealItem>
         </li>
-        <li>
+        <li className={styles.li}>
           <MealItem></MealItem>
         </li>
-        <li>
+        <li className={styles.li}>
           <MealItem></MealItem>
         </li>
-        <li>
+        <li className={styles.li}>
           <MealItem></MealItem>
         </li>
       </ul>

@@ -2,10 +2,21 @@ import React from 'react';
 import styles from './HeaderCartProfile.module.css';
 import cartIcon from '../../../assets/HeaderAssets/icon-cart.svg';
 import profileAvatar from '../../../assets/HeaderAssets/image-avatar.png';
+import dropdown from '../../../assets/HeaderAssets/dropdown2.png';
 
 const HeaderCartProfile = () => {
   return (
     <ul className={styles['cart-profile']}>
+      <li className={`${styles['cart-profile-li']}`}>
+        <a href="/">
+          <img
+            className={styles['cart-avatar-drp']}
+            src={dropdown}
+            alt="dropdown"
+          ></img>
+        </a>
+      </li>
+
       <li className={styles['cart-profile-li']}>
         <span className={styles['cart-profile-span']}>3</span>
         <a href="/">
@@ -17,6 +28,7 @@ const HeaderCartProfile = () => {
           ></img>
         </a>
       </li>
+
       <li className={`${styles['cart-profile-li']}`}>
         <a href="/">
           <img

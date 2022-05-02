@@ -36,10 +36,10 @@ header {
 
 
 
-.wrapper .cart-profile {
+/* .wrapper .cart-profile {
   display: grid;
-  /* align-items: center;
-    justify-content: space-between; */
+  align-items: center;
+    justify-content: space-between;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 40px;
   align-items: center;
@@ -72,7 +72,7 @@ header {
   height: 50px;
   border: 1px solid hsl(26, 100%, 55%);
   border-radius: 50px;
-}
+} */
 
 /* ##################################################################
 Header ends
@@ -95,16 +95,115 @@ Header ends
   } */
   
 
-  @media (max-width:991px){
+  @media(max-width:991px){
 
     .logo-h3{
-      font-size: 2.5rem;
+      font-size: 1.7rem;
     }
 
     .headerwrapper{
       padding: 5px 10px;
     }
-
   }
+
+  @media(max-width:360px){
+    /* .wrapper {
+      margin-left: 20px;
+      margin-right: 20px;
+    } */
+
+    .headerwrapper{
+      /* display: inline-block; */
+      /* justify-content: space-between; */
+      padding: 5px 10px;
+      background-color: #fff;
+      box-shadow: 0  3px 5px  #ebebeb;
+      
+      /* position: relative; */
+      /* top: 10px;
+      left:5px;
+      right:5px;
+      width:360px; */
+    }
+
+    .logo-h3{
+      margin-left: 10px;
+    }
+  }
+
+  @media(max-width:600px){
+
+    .wrapper {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .headerwrapper{
+      padding: 5px 10px;
+      background-color: #fff;
+      box-shadow: 0  3px 5px  #ebebeb;
+  }
+}
+
+@media(min-width:600px){
+
+  .wrapper {
+    /* max-width: 540px; */
+    margin: 10px 20px 10px 20px;
+  }
+
+  .headerwrapper{
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: 0  3px 5px  #ebebeb;
+}
+}
+
+@media(min-width:768px){
+
+  .wrapper {
+    /* max-width: 540px; */
+    margin: 10px 20px 10px 20px;
+  }
+
+  .headerwrapper{
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: 0  3px 5px  #ebebeb;
+}
+}
+
+@media(min-width:992px){
+
+  .wrapper {
+    /* max-width: 540px; */
+    margin: 10px 20px 10px 20px;
+  }
+
+  .headerwrapper{
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: 0  3px 5px  #ebebeb;
+}
+}
+
+@media(min-width:1200px){
+
+ 
+    .wrapper {
+      max-width: 1440px;
+      margin: 10px auto;
+    }
+  
+
+  .headerwrapper{
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: 0  3px 5px  #ebebeb;
+}
+}
+
+
+
 
   

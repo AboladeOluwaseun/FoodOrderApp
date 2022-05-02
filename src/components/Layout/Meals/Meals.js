@@ -6,8 +6,12 @@ import styles from './Meals.module.css';
 const MealSection = () => {
   return (
     <React.Fragment>
-      <MealsFilterSearch classname={styles['meal-section']}></MealsFilterSearch>
-      <AvailableMeals></AvailableMeals>
+      <div className={styles.wrapper}>
+        <MealsFilterSearch
+          classname={styles['meal-section']}
+        ></MealsFilterSearch>
+        <AvailableMeals></AvailableMeals>
+      </div>
     </React.Fragment>
   );
 };

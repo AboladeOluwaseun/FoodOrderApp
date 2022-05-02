@@ -59,14 +59,14 @@
 
 .availablemeals-h1{
    font-size: 2.6em;
-   margin-bottom: 30px;
+   /* margin-bottom: 30px; */
 }
 
 .filter{
     margin-bottom: 10px;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
     margin-top: 30px;
 }
 
@@ -148,3 +148,123 @@
     pointer-events: all;
 }
  */
+
+
+ @media(max-width:360px){
+    .wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    .container{
+        display: block;
+    }
+
+    .btn-filter{
+        margin-top: 30px;
+    }
+
+    .btn-filter-btn{
+        padding: 12px 32px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+
+    .search-input{
+        width: 300px;
+    }
+
+    .search-filter{
+        display: block;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .search-bar-icon{
+        position: absolute;
+        right: 90px;
+        width: 200px;
+    }
+
+    .filter-icon{
+        width: 40px;
+        height: 40px;
+        background-color: #ebebeb;
+        border-radius: 50px;
+        padding: 5px;
+        cursor: pointer;
+        position: absolute;
+        right: -10px;
+    }
+}
+
+@media(max-width:600px){
+    .wrapper{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .search-input{
+        width: 300px;
+    }
+
+    .btn-filter-btn{
+        padding: 12px 32px;
+        margin-bottom: 15px;
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+    .search-filter{
+        display: flex;
+
+    }
+    
+}
+
+@media(min-width:600px){
+    .wrapper{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .container{
+        align-items: center;
+    }
+    .search-input{
+        width: 300px;
+    }
+
+    .btn-filter-btn{
+        padding: 12px 32px;
+        margin-bottom: 15px;
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media(min-width:992px){
+    .wrapper{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media  (min-width:1200px){
+    
+        .wrapper {
+          max-width: 1440px;
+          margin: 10px auto;
+        }
+
+
+    .btn-filter-btn{
+        padding: 15px 40px;
+        margin-bottom: 15px;
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+}

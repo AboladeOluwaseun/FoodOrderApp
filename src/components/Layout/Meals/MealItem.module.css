@@ -6,6 +6,7 @@
     height: 20rem;
     border-radius: 10px;
     cursor: pointer;
+    /* background-color: red; */
 }
 
 .meal-item-div:hover{
@@ -88,17 +89,20 @@
 @media (max-width:360px){
 
     .meal-item-div{
-        width: 20rem;
-        margin-left: 10px;
-        margin-right:20px;
+        position: relative;
+        left: 6px;
+       width: 20rem;
+        
     }
 }
 
-@media (max-width:600px){
+@media(max-width:600px) and (min-width:362px){
     .meal-item-div{
-        width: 20rem;
-        margin-left: 20px;
+         position: relative;
+        width: 23rem;
+         /*margin-left: 20px;
         margin-right: 20px;
+        left: 33px;   */
     }
 } 
 

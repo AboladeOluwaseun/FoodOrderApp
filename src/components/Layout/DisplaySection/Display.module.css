@@ -132,7 +132,7 @@
   right: 30px;
   font-size: 2.5rem;
   font-weight: bolder;
-  background-image: url('../../../assets/DisplayAssets/i-like-food.svg');
+  /* background-image: url('../../../assets/DisplayAssets/i-like-food.svg'); */
   /* background-color: #fff; */
   background-position: center;
   background-size: contain;
@@ -155,11 +155,13 @@
     width: 100%;
     border-radius: 0px;
     border: 0px;
+    position: relative;
+    
     /* margin-right: 30px; */
   }
 
   .main-image-img{
-    width: 100%;
+    /* width: 100%; */
     border-radius: 0px;
     border: none;
     object-fit:cover;
@@ -168,7 +170,7 @@
   .display-Text{
     font-size: 1.5rem;
     top: 20px;
-    left: 40px;
+    left: -10px;
     padding: 20px;
     margin-left: 10px;
     margin-right: -50px;
@@ -203,7 +205,7 @@
   .display-Text{
     font-size: 1.5rem;
     top: 20px;
-    right: 40px;
+    left: -10px;
     padding: 20px;
     margin-left: 10px;
     margin-right: -50px;
@@ -243,7 +245,7 @@
   .display-Text{
     font-size: 2.0rem;
     top: 20px;
-    right: 50px;
+    left: -5px;
     padding: 20px;
     margin-left: 10px;
     margin-right: -50px;

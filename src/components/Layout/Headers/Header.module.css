@@ -1,7 +1,7 @@
-.wrapper {
+/* .wrapper {
   max-width: 1440px;
   margin: 10px auto;
-}
+} */
 
 header {
   background-color: #fff;
@@ -16,7 +16,7 @@ header {
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .logo-h3 {
@@ -95,95 +95,95 @@ Header ends
   } */
   
 
-  @media(max-width:991px){
-
-    .logo-h3{
-      font-size: 1.7rem;
-    }
-
-    .headerwrapper{
-      padding: 5px 10px;
-    }
-  }
+  
 
   @media(max-width:360px){
-    /* .wrapper {
-      margin-left: 20px;
-      margin-right: 20px;
-    } */
+     .wrapper {
+      width: 100%;
+     } 
 
     .headerwrapper{
-      /* display: inline-block; */
-      /* justify-content: space-between; */
-      padding: 5px 10px;
-      background-color: #fff;
+      /* padding: 30px 10px; */
+      background-color: red;
       box-shadow: 0  3px 5px  #ebebeb;
       
-      /* position: relative; */
-      /* top: 10px;
-      left:5px;
-      right:5px;
-      width:360px; */
     }
 
     .logo-h3{
       margin-left: 10px;
+      font-size: 1.5rem;
     }
   }
 
   @media(max-width:600px){
 
-    .wrapper {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
+     .wrapper {
+      width: 100%;
+    } 
 
     .headerwrapper{
       padding: 5px 10px;
       background-color: #fff;
       box-shadow: 0  3px 5px  #ebebeb;
+     
+  }
+
+  .logo-h3{
+    margin-left: 10px;
+    font-size: 2.0rem;
   }
 }
 
 @media(min-width:600px){
 
   .wrapper {
-    /* max-width: 540px; */
-    margin: 10px 20px 10px 20px;
+    width: 100%;
+
   }
 
   .headerwrapper{
-    padding: 5px 10px;
+    padding: 30px 15px;
     background-color: #fff;
     box-shadow: 0  3px 5px  #ebebeb;
+    
+    
+}
+.logo-h3{
+  font-size: 1.7rem;
 }
 }
 
 @media(min-width:768px){
 
   .wrapper {
-    /* max-width: 540px; */
-    margin: 10px 20px 10px 20px;
+    width: 100%;
   }
 
   .headerwrapper{
-    padding: 5px 10px;
+    padding: 30px 15px;
     background-color: #fff;
     box-shadow: 0  3px 5px  #ebebeb;
+  
+}
+.logo-h3{
+  font-size: 2.4rem;
 }
 }
 
 @media(min-width:992px){
 
   .wrapper {
-    /* max-width: 540px; */
-    margin: 10px 20px 10px 20px;
+    width: 100%;
   }
 
   .headerwrapper{
     padding: 5px 10px;
     background-color: #fff;
     box-shadow: 0  3px 5px  #ebebeb;
+    
+}
+.logo-h3{
+  font-size: 2.5rem;
 }
 }
 
@@ -191,8 +191,7 @@ Header ends
 
  
     .wrapper {
-      max-width: 1440px;
-      margin: 10px auto;
+      width: 100%;
     }
   
 
@@ -200,6 +199,7 @@ Header ends
     padding: 5px 10px;
     background-color: #fff;
     box-shadow: 0  3px 5px  #ebebeb;
+   
 }
 }
 

@@ -87,16 +87,16 @@
     border-radius: 50px;
     border: none;
     background-color: transparent;
-    color: #e7cb3e ;
+    color: rgba(80,49,26,255) ;
     outline: none;
     cursor: pointer;
     border: 1px solid #ebebeb;
 }
 
 .btn-filter-btn.btn-active{
-    background-color:#e7cb3e;
+    background-color:rgba(80,49,26,255);
     color: white;
-    box-shadow: 0 10px 35px -15px #e7cb3e;
+    box-shadow: 0 10px 35px -15px rgba(80,49,26,255);
 }
 
 /* .range-slider{

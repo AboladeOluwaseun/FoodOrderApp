@@ -3,12 +3,12 @@
   margin: 10px auto;
 } */
 
-header {
+/* header {
   background-color: #fff;
   border-bottom: 1px solid #ebebeb;
   border-top: 1px solid #ebebeb;
   margin-bottom: 20px;
-}
+} */
 .headerwrapper {
   display: flex;
   /* grid-template-columns: repeat(3, 1fr); */
@@ -31,7 +31,7 @@ header {
 }
 
 .logo-span{
-  color:#e7cb3e;
+  color:rgba(80,49,26,255);
 }
 
 

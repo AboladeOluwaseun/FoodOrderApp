@@ -1,3 +1,7 @@
+.li{
+    list-style-type: none;
+  }
+
 .meal-item-div{
     display: block;
     margin: 2rem auto;
@@ -17,16 +21,10 @@
 @keyframes rotation {
     from {
       transform: rotateY(180deg) scale(1,1);
-     
     }
     to {
       transform: rotateY(359deg) scale(1.2,1.2);
-      
     }
-
-    
-   
-    
 }
 
 
@@ -78,6 +76,7 @@
     width: 15px;
     height: 15px;
     margin-left: 3px;
+    
 }
 
 .dollar-icon{

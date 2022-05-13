@@ -51,8 +51,10 @@
     }
 
     .logo-h3{
-      margin-left: 10px;
+      position: relative;
+      margin-left: 20%;
       font-size: 1.5rem;
+      left: 7%;
     }
   }
 

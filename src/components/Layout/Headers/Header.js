@@ -6,15 +6,6 @@ import Dropdown from './Dropdown';
 import styles from './Header.module.css';
 
 const Header = (props) => {
-  const [navDisplay, setNavDisplay] = useState(false);
-  const toggleDropDownDisplay = () => {
-    {
-    }
-  };
-  const navDisplayHandler = (e) => {
-    setNavDisplay(true);
-  };
-
   return (
     <React.Fragment>
       <header className={`${styles.wrapper} ${styles.headerwrapper}`}>
@@ -22,8 +13,8 @@ const Header = (props) => {
           <span className={styles['logo-span']}>chow</span>meals
         </h3>
         <HeaderNavigation></HeaderNavigation>
-        {navDisplay && <Dropdown></Dropdown>}
-        <HeaderCartProfile navDisplay={navDisplayHandler}></HeaderCartProfile>
+        <Dropdown></Dropdown>
+        <HeaderCartProfile></HeaderCartProfile>
       </header>
     </React.Fragment>
   );

@@ -33,16 +33,6 @@ const HeaderCartProfile = (props) => {
     <>
       {display && <Cart cancelCart={closeProductDetailHandler}></Cart>}
       <ul className={styles['cart-profile']}>
-        <li className={`${styles['cart-profile-li']}`}>
-          <div onClick={onClickNavHandler}>
-            <img
-              className={styles['cart-avatar-drp']}
-              src={dropdown}
-              alt="dropdown"
-            ></img>
-          </div>
-        </li>
-
         <li className={styles['cart-profile-li']}>
           <div
             className={styles['cart-profile-cart-button']}

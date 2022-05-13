@@ -26,6 +26,7 @@
         border-radius: 10px;
         box-shadow: 0 3px 10px black;
         border: 1px solid #ebebeb;
+        transition: all 0.5s ease;
     }
 
     .header{
@@ -112,7 +113,7 @@
         top: 15vh;
         left: 0%;
         width: 100%;
-        height: 90%;
+        height: 70%;
         z-index: 2;
         /* overflow: hidden; */
         background-color: white;
@@ -133,7 +134,7 @@
         top: 8vh;
         left: 5%;
         width: 90%;
-        height: 70%;
+        height: 80%;
         z-index: 2;
         /* overflow: hidden; */
         background-color: white;
@@ -144,6 +145,7 @@
           border-radius: 0px;
           box-shadow: 0 3px 10px black;
           border: 1px solid #ebebeb;
+          
       }
 
       .submit-btn{
@@ -158,7 +160,7 @@
         top: 8%;
         left: 35vw;
         width: 60%;
-        height: 50%;
+        height: 70%;
         z-index: 2;
         /* overflow: hidden; */
         background-color: white;

@@ -1,0 +1,42 @@
+.nav-section{
+    display: block;
+    position: fixed;
+    background-color:rgba(80,49,26,200);
+    height: 100%;
+    width: 40%;
+    top: 55px;
+    left: 0;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+.nav-section-a{
+    display: block;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    
+  }
+
+  .nav-section-a:hover{
+    background-color: white;
+    color: black;
+    width: 40%;
+    padding: 5px 10px;
+  }
+
+  @media(max-width:360px){
+    .nav-section{
+        /* top: 8vh; */
+        position: fixed;
+    }
+  }
+
+  @media(min-width:600px){
+      .nav-section{
+       display: none;
+      }
+  }
+
+ 

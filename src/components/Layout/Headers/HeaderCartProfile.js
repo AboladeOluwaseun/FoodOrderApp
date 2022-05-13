@@ -11,6 +11,11 @@ const HeaderCartProfile = (props) => {
   const cartContext = useContext(CartContext);
   const [display, setDisplay] = useState();
 
+  const onClickNavHandler = (e) => {
+    e.preventDefault();
+    props.navDisplay();
+  };
+
   const onClickHandler = (e) => {
     e.preventDefault();
     setDisplay(true);
@@ -29,13 +34,13 @@ const HeaderCartProfile = (props) => {
       {display && <Cart cancelCart={closeProductDetailHandler}></Cart>}
       <ul className={styles['cart-profile']}>
         <li className={`${styles['cart-profile-li']}`}>
-          <a href="/">
+          <div onClick={onClickNavHandler}>
             <img
               className={styles['cart-avatar-drp']}
               src={dropdown}
               alt="dropdown"
             ></img>
-          </a>
+          </div>
         </li>
 
         <li className={styles['cart-profile-li']}>

@@ -168,7 +168,7 @@
       position: relative;
       align-items: center;
       top: -20px;
-      right: 15%;
+      right: 8%;
       
     }
 
@@ -218,7 +218,7 @@
 
   @media (min-width:768px){
     .cart-profile{
-      right: 10%;
+      right:10%;
     }
 
     .cart-profile-cart{
@@ -239,6 +239,12 @@
   @media (min-width:992px){
     .cart-profile{
       right: -7%;
+    }
+  }
+
+  @media (min-width:1200px){
+    .cart-profile{
+      left:25%;
     }
   }
 

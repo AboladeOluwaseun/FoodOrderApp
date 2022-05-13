@@ -36,6 +36,7 @@
   .drodpdown-div{
     position: absolute;
     top: 20%;
+    cursor: pointer;
   }
   .cart-avatar-drp {
     width: 25px;
@@ -61,9 +62,22 @@
     }
   }
 
+  @media(max-width:600px){
+    .nav-section{
+        /* top: 8vh; */
+        position: fixed;
+    }
+    .drodpdown-div{
+     top: 20%;
+    }
+  }
+
   @media(min-width:600px){
       .nav-section{
        display: none;
+      }
+      .drodpdown-div{
+        display: none;
       }
   }
 

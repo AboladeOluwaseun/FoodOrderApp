@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import styles from './Dropdown.module.css';
-import dropdown from '../../../assets/HeaderAssets/dropdown2.png';
+import dropdown from '../../../assets/HeaderAssets/Hamburger.png';
 
 const Dropdown = (props) => {
   const [navDisplay, setNavDisplay] = useState(false);

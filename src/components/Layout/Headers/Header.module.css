@@ -72,8 +72,9 @@
   }
 
   .logo-h3{
-    margin-left: 10px;
+    position: relative;
     font-size: 2.0rem;
+    left: 8%;
   }
 }
 
@@ -142,6 +143,7 @@
     padding: 5px 10px;
     background-color: #fff;
     box-shadow: 0  3px 5px  #ebebeb;
+    height: 10%;
    
 }
 }

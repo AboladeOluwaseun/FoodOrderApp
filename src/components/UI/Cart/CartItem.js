@@ -10,7 +10,7 @@ const CartItem = (props) => {
 
   return (
     <div className={styles['cart-item']}>
-      <img className={styles['cart-item-img']} src={food} alt="food-img" />
+      <img className={styles['cart-item-img']} src={props.img} alt="food-img" />
       <div className={styles['cart-item-detail']}>
         <h3 className={styles['cart-item-h3']}>{props.name}</h3>
         <p className={styles['cart-item-p']}>

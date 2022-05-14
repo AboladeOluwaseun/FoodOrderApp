@@ -33,6 +33,7 @@ const ProductDetail = (props) => {
       amount: amount,
       added: 1,
       id: props.id,
+      img: props.img,
     });
   };
 
@@ -41,7 +42,11 @@ const ProductDetail = (props) => {
       <div className={styles.backdrop} onClick={props.cancelDisplay}></div>
 
       <form className={styles['product-detail']} onSubmit={onSubmitHandler}>
-        <img className={styles['product-image']} src={food} alt="food-img" />
+        <img
+          className={styles['product-image']}
+          src={props.img}
+          alt="food-img"
+        />
 
         <div className={styles['product-details-section']}>
           <div className={styles['product-info-section']}>
@@ -49,10 +54,10 @@ const ProductDetail = (props) => {
             <h2 className={styles['product-title-h2']}>{props.name}</h2>
           </div>
 
-          <p className={styles['product-info']}>
+          {/* <p className={styles['product-info']}>
             Yummy {props.name} made with the perfect recipe, <br></br> healthy
             and good for your body
-          </p>
+          </p> */}
 
           <div className={styles['price-section']}>
             <div className={styles['product-price']}>

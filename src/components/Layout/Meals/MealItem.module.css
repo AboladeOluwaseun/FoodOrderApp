@@ -23,7 +23,7 @@
       transform: rotateY(180deg) scale(1,1);
     }
     to {
-      transform: rotateY(359deg) scale(1.2,1.2);
+      transform: rotateY(90deg) scale(1.2,1.2);
     }
 }
 
@@ -89,8 +89,8 @@
 
     .meal-item-div{
         position: relative;
-        left: 6px;
-       width: 20rem;
+        left: 8%;
+       width: 18rem;
         
     }
 }
@@ -98,7 +98,7 @@
 @media(max-width:600px) and (min-width:362px){
     .meal-item-div{
          position: relative;
-        width: 23rem;
+        width: 20rem;
          /*margin-left: 20px;
         margin-right: 20px;
         left: 33px;   */

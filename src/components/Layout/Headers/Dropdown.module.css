@@ -1,5 +1,5 @@
 .nav-section{
-    display: block;
+    display: none;
     position: fixed;
     background-color:rgba(80,49,26,200);
     height: 100%;
@@ -13,11 +13,11 @@
 
 .nav-section-active{
   left: 0%;
-  display: block;
+  display: none;
   position: fixed;
   background-color:rgba(80,49,26,200);
   height: 100%;
-  width: 40%;
+  width: 60%;
   top: 50px;
   z-index: 2;
   opacity: 0.9;
@@ -30,6 +30,7 @@
     font-size: 1.2rem;
     text-decoration: none;
     color: white;
+    width: inherit;
     
   }
 
@@ -59,6 +60,12 @@
     .nav-section{
         /* top: 8vh; */
         position: fixed;
+        display: block
+    }
+
+    .nav-section-active{
+      position: fixed;
+        display: block
     }
   }
 
@@ -66,6 +73,11 @@
     .nav-section{
         /* top: 8vh; */
         position: fixed;
+        display: block;
+    }
+    .nav-section-active{
+      position: fixed;
+        display: block
     }
     .drodpdown-div{
      top: 20%;
@@ -80,5 +92,33 @@
         display: none;
       }
   }
+
+  @media(min-width:768px){
+    .nav-section{
+      display: none;
+     }
+     .drodpdown-div{
+       display: none;
+     }
+  }
+
+  @media(min-width:992px){
+    .nav-section{
+      display: none;
+     }
+     .drodpdown-div{
+       display: none;
+     }
+  }
+
+  @media(min-width:1200px){
+    .nav-section{
+      display: none;
+     }
+     .drodpdown-div{
+       display: none;
+     }
+  }
+
 
  

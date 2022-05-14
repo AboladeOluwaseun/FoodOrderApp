@@ -1,6 +1,6 @@
 .cart-item{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 3fr 2fr 1fr;
     position: relative;
     width: 100%;
     height: 70%;
@@ -75,11 +75,12 @@
 @media (max-width:360px){
     .cart-item{
         height: 50%;
-        /* grid-template-columns: 2fr 1fr 1fr; */
+        /* grid-template-columns: 3fr 2fr 1fr; */
     }
 
     .cart-item-img{
         width: 80%;
+        
     }
     .cart-item-p{
         color: black;
@@ -114,4 +115,10 @@
         /* grid-template-columns: 2fr 1fr 1fr; */
     }
 
+    .cart-item-p{
+        color: black;
+        font-weight: 500;
+        font-size: 0.75rem;
+        /* margin-right: 10%; */
+    }
 }

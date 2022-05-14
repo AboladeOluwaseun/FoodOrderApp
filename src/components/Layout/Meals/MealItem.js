@@ -8,7 +8,7 @@ import dollarSign from '../../../assets/MealSectionAssets/dollarsymbol.png';
 
 const MealItem = (props) => {
   const [display, setDisplay] = useState();
-  const { name, price, formerprice, id } = props;
+  const { name, price, formerprice, id, img } = props;
 
   const onClickHandler = (e) => {
     setDisplay(true);
@@ -28,13 +28,14 @@ const MealItem = (props) => {
           price={price}
           formerprice={formerprice}
           id={id}
+          img={img}
           cancelDisplay={closeProductDetailHandler}
           onClick={onClickHandler}
         ></ProductDetail>
       )}
       <li className={styles.li}>
         <div className={styles['meal-item-div']} onClick={onClickHandler}>
-          <img className={styles['meal-item-img']} src={pizzaImage} alt="" />
+          <img className={styles['meal-item-img']} src={props.img} alt="" />
           <div className={styles['meal-item-description']}>
             <p className={styles['food-name']}>{props.name}</p>
             <p className={styles['food-rating']}>

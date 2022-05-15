@@ -93,10 +93,10 @@
       .cart{ 
         position: fixed;
       
-          top: 8vh;
+          top: 12vh;
           left: 5%;
           width: 90%;
-          height: 80%;
+          height: 60%;
           z-index: 2;
           background-color: white;
             padding: 15px;
@@ -105,33 +105,88 @@
             border: 1px solid #ebebeb;
             
         }
+
+        .checkout-p{
+          position: absolute;
+          top: 30%;
+          left: 14%;
+          font-size: 1.4rem;
+        }
+
+
      }
   
      @media (min-width:600px){
       .cart{ 
         position: fixed;
        
-          top: 8%;
-          left: 35vw;
+          top: 20%;
+          left: 25vw;
           width: 60%;
-          height: 70%;
+          height: 50%;
           z-index: 2;
             padding: 15px;
             border-radius: 0px;
             box-shadow: 0 3px 10px black;
             border: 1px solid #ebebeb;
         }
+
+        .cancel-img{
+          top: 10vh;
+          left: 85%;
+        }
+
+        .checkout-p{
+          position: absolute;
+          top: 35%;
+          left: 14%;
+          font-size: 1.7rem;
+        }
   
      }
+
+     @media(min-width:768px){
+      .cancel-img{
+        top: 150%;
+        left: 80%;
+      }
+
+      .checkout-p{
+        position: absolute;
+        top: 25%;
+        left: 14%;
+        font-size: 1.7rem;
+      }
+     }
+
+     
+     @media(min-width:992px){
+      .cancel-img{
+        top: 150%;
+        left: 80%;
+      }
+
+      .checkout-p{
+        position: absolute;
+        top: 25%;
+        left: 14%;
+        font-size: 2rem;
+      }
+
+      .checkout-span1{
+        font-size: 3rem;
+      }
+     }
+  
   
      @media (min-width:1200px){
       .cart{ 
         position: fixed;
        
-          top: 8%;
-          left: 65vw;
-          width: 30%;
-          height: 65%;
+          top: 20%;
+          left: 30vw;
+          width: 50%;
+          height: 60%;
           z-index: 2;
             row-gap: none;
             padding: 15px;
@@ -139,6 +194,21 @@
             box-shadow: 0 3px 10px black;
             border: 1px solid #ebebeb;
         }
+
+        .checkout-p{
+          position: absolute;
+          top: 30%;
+          left: 14%;
+          font-size: 2.5rem;
+        }
+
+        .cancel-img{
+          top: 220%;
+          left: 75%;
+          width: 30px;
+         height: 30px;
+        }
+
      }
    
      

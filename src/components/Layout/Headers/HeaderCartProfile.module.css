@@ -122,7 +122,7 @@
     .cart-avatar {
       width: 30px;
       height: 30px;
-      border: 2px solid #e7cb3e;
+      border: 2px solid rgba(80,49,26,255);
       border-radius: 50px;
       margin-right: 10px;
       /* float: right; */

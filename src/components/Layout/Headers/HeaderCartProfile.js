@@ -6,6 +6,7 @@ import profileAvatar from '../../../assets/HeaderAssets/image-avatar.png';
 import CartContext from '../../../Store/Cartcontext';
 import Cart from '../../UI/Cart/Cart';
 import Orderconfirmed from '../../UI/Orderconfirmed';
+import profile from '../../../assets/HeaderAssets/Profile.png';
 
 const HeaderCartProfile = (props) => {
   const cartContext = useContext(CartContext);
@@ -65,7 +66,7 @@ const HeaderCartProfile = (props) => {
           <div>
             <img
               className={styles['cart-avatar']}
-              src={profileAvatar}
+              src={profile}
               alt="profileAvatar"
             ></img>
           </div>

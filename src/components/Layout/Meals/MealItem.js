@@ -8,11 +8,11 @@ import dollarSign from '../../../assets/MealSectionAssets/dollarsymbol.png';
 
 const MealItem = (props) => {
   const [display, setDisplay] = useState();
+
   const { name, price, formerprice, id, img } = props;
 
   const onClickHandler = (e) => {
     setDisplay(true);
-    console.log('this is working');
   };
 
   const closeProductDetailHandler = (e) => {
@@ -30,7 +30,6 @@ const MealItem = (props) => {
           id={id}
           img={img}
           cancelDisplay={closeProductDetailHandler}
-          onClick={onClickHandler}
         ></ProductDetail>
       )}
       <li className={styles.li}>

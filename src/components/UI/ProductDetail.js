@@ -27,6 +27,7 @@ const ProductDetail = (props) => {
     if (amount === 0) {
       return;
     }
+
     cartContext.addItem({
       name: props.name,
       price: props.price,

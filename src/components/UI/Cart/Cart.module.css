@@ -37,6 +37,19 @@
       /* background-color: yellow; */
     }
 
+    .cancel-img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 170%;
+      left: 80%;
+      z-index: 3;
+      cursor: pointer;
+    }
+
     .cart-items{
       /* background-color: red; */
       display: block;

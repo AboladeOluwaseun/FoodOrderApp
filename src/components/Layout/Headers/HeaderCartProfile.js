@@ -3,26 +3,28 @@ import { useContext, useState } from 'react';
 import styles from './HeaderCartProfile.module.css';
 import cartIcon from '../../../assets/HeaderAssets/icon-cart.svg';
 import profileAvatar from '../../../assets/HeaderAssets/image-avatar.png';
-import dropdown from '../../../assets/HeaderAssets/dropdown2.png';
 import CartContext from '../../../Store/Cartcontext';
 import Cart from '../../UI/Cart/Cart';
+import Orderconfirmed from '../../UI/Orderconfirmed';
 
 const HeaderCartProfile = (props) => {
   const cartContext = useContext(CartContext);
   const [display, setDisplay] = useState();
-
-  const onClickNavHandler = (e) => {
-    e.preventDefault();
-    props.navDisplay();
-  };
+  const [checkOutModal, setCheckoutModal] = useState();
 
   const onClickHandler = (e) => {
     e.preventDefault();
     setDisplay(true);
   };
-
-  const closeProductDetailHandler = (e) => {
-    setDisplay(null);
+  const closeCartHandler = (e) => {
+    setDisplay(false);
+  };
+  const showCheckOutHandler = () => {
+    setCheckoutModal(true);
+  };
+  const closeCheckOutHandler = (e) => {
+    e.preventDefault();
+    setCheckoutModal(false);
   };
 
   const numberOfItems = cartContext.items.reduce((currentValue, item) => {
@@ -31,7 +33,15 @@ const HeaderCartProfile = (props) => {
 
   return (
     <>
-      {display && <Cart cancelCart={closeProductDetailHandler}></Cart>}
+      {checkOutModal && (
+        <Orderconfirmed cancelCheckOut={closeCheckOutHandler}></Orderconfirmed>
+      )}
+      {display && (
+        <Cart
+          showCheckOut={showCheckOutHandler}
+          cancelCart={closeCartHandler}
+        ></Cart>
+      )}
       <ul className={styles['cart-profile']}>
         <li className={styles['cart-profile-li']}>
           <div

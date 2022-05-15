@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import CartItem from './CartItem';
 import CartContext from '../../../Store/Cartcontext';
 import styles from './Cart.module.css';
+import cancel from '../../../assets/HeaderAssets/cancel.png';
 
 const Cart = (props) => {
   const cartContext = useContext(CartContext);
@@ -12,6 +13,8 @@ const Cart = (props) => {
   const cartSubmitHandler = (e) => {
     e.preventDefault();
     props.cancelCart();
+    props.showCheckOut();
+    cartContext.resetCart();
   };
 
   const onAddHandler = (item) => {
@@ -49,6 +52,12 @@ const Cart = (props) => {
 
   return (
     <>
+      <img
+        className={styles['cancel-img']}
+        src={cancel}
+        alt="dropdown"
+        onClick={props.cancelCart}
+      ></img>
       <div className={styles.backdrop} onClick={props.cancelCart}></div>
       <form className={styles.cart} onSubmit={cartSubmitHandler}>
         <header className={styles.header}>Your Cart</header>

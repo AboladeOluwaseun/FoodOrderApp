@@ -1,6 +1,7 @@
 import React from 'react';
 import CartContext from './Cartcontext';
 import { useReducer } from 'react';
+import { type } from '@testing-library/user-event/dist/type';
 
 const defaultState = {
   items: [],
@@ -79,6 +80,13 @@ const cartReducer = (state, action) => {
       totalAmount: updatedTotalAmount,
     };
   }
+
+  if (action.type === 'RESET') {
+    return {
+      items: [],
+      totalAmount: 0,
+    };
+  }
   return defaultState;
 };
 
@@ -97,16 +105,18 @@ const CartProvider = (props) => {
     dispatch({ type: 'DELETE', id: id });
   };
 
+  const resetCartHandler = () => {
+    dispatch({ type: 'RESET' });
+  };
+
   const cartContext = {
     items: cartState.items,
     totalAmount: cartState.totalAmount,
     addItem: addItemToCartHandler,
     removeitem: removeItemFromCartHandler,
     deleteItem: deleteItemHandler,
+    resetCart: resetCartHandler,
   };
-
-  console.log(cartState);
-
   return (
     <CartContext.Provider value={cartContext}>
       {props.children}

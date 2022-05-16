@@ -197,16 +197,20 @@
 
         .checkout-p{
           position: absolute;
-          top: 30%;
+          top: 35%;
           left: 14%;
           font-size: 2.5rem;
         }
 
         .cancel-img{
           top: 220%;
-          left: 75%;
+          left: 77%;
           width: 30px;
          height: 30px;
+        }
+
+        .checkout-span1{
+          margin-left: 2%;
         }
 
      }

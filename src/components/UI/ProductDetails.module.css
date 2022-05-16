@@ -670,6 +670,7 @@ font-size: 1.5rem;
     
     .product-details-section{
       padding-top: -20%;
+      margin-top: 30%;
     }
     .product-info-section{
         max-height: inherit;
@@ -683,6 +684,7 @@ font-size: 1.5rem;
         font-weight: 2rem;
         font-size: 1rem;
         margin-top: 10px;
+        margin-left: 10%;
       }
     
       .product-title-h2{
@@ -711,7 +713,7 @@ font-size: 1.5rem;
       }
     
       .product-price-h3{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-left: 20%;
       }
     
@@ -728,7 +730,7 @@ font-size: 1.5rem;
       .product-price-p{
         text-decoration: line-through;
         color: hsl(219, 9%, 45%);
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-left: 25%;
         margin-bottom: 12px;
     

@@ -122,3 +122,20 @@
         /* margin-right: 10%; */
     }
 }
+
+@media (min-width:1200px){
+    .cart-item{
+        height: 40%;
+       
+    }
+
+    .cart-item-h3{
+        font-size: 1.4rem;
+        margin-left: -20%;
+    }
+
+    .cart-item-p{
+        font-size: 0.9rem;
+        margin-left: -20%;
+    }
+}

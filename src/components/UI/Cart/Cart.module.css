@@ -44,8 +44,8 @@
       margin-right: 20px;
       margin-bottom: 10px;
       position: absolute;
-      top: 170%;
-      left: 80%;
+      top: 100%;
+      left: 93%;
       z-index: 3;
       cursor: pointer;
     }
@@ -100,22 +100,7 @@
     transform:scale( 1.05, 1.05);
   }
 
-  ::-webkit-scrollbar{
-    width: 5px;
-  }
-    
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-
-  ::-webkit-scrollbar-thumb{
-    background-color: grey;
-    border-radius: 10px;
-  }
-
-   ::-webkit-scrollbar-thumb:hover{
-     background-color: #e7cb3e;
-   }
+  
 
 
    @media (max-width:360px){

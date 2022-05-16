@@ -30,3 +30,20 @@ body {
      grid-template-rows: 1fr;
    } */
 }
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: grey;
+  border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb:hover{
+   background-color:  rgba(80,49,26,255);
+ }

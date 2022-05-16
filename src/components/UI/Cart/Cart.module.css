@@ -33,7 +33,7 @@
       border-bottom: 1px solid #ebebeb;
       padding: 5px;
       font-weight: bolder;
-      color: rgba(80,49,26,255)
+      color: rgba(80,49,26,255);
       /* background-color: yellow; */
     }
 
@@ -43,9 +43,9 @@
       border-radius: 50px;
       margin-right: 20px;
       margin-bottom: 10px;
-      position: absolute;
-      top: 100%;
-      left: 93%;
+      position: absolute; 
+      top: 250%;
+      left: 90%;
       z-index: 3;
       cursor: pointer;
     }
@@ -122,9 +122,11 @@
           box-shadow: 0 3px 10px black;
           border: 1px solid #ebebeb;
       }
+
+      
    }
 
-   @media (max-width:600px){
+   @media (max-width:600px) and (min-width:362px){
     .cart{ 
       position: fixed;
     
@@ -144,7 +146,10 @@
           border: 1px solid #ebebeb;
           
       }
-
+      .cancel-img{
+        left: 80%;
+        top: 170%;
+      }
       .submit-btn{
         font-size: 1.2rem;
       }
@@ -173,16 +178,22 @@
       .submit-btn{
         font-size: 1.2rem;
       }
+
+      .cancel-img{
+        left: 85%;
+        top: 90%;
+      }
    }
 
-   @media (min-width:1200px){
+   @media (min-width:992px){
+
     .cart{ 
       position: fixed;
      
         top: 8%;
-        left: 65vw;
-        width: 30%;
-        height: 65%;
+        left: 35vw;
+        width: 60%;
+        height: 70%;
         z-index: 2;
         /* overflow: hidden; */
         background-color: white;
@@ -194,6 +205,41 @@
           box-shadow: 0 3px 10px black;
           border: 1px solid #ebebeb;
       }
+
+
+     .cancel-img{
+      left: 90%;
+      top: 230%;
+      width: 30px;
+      height: 30px;
+     }
+   }
+
+   @media (min-width:1200px){
+    .cart{ 
+    
+        position: fixed;
+       
+          top: 8%;
+          left: 35vw;
+          width: 60%;
+          height: 70%;
+          z-index: 2;
+          /* overflow: hidden; */
+          background-color: white;
+          display: grid;
+            grid-template-rows: 1fr 4fr 1fr 1fr;
+            row-gap: none;
+            padding: 15px;
+            border-radius: 0px;
+            box-shadow: 0 3px 10px black;
+            border: 1px solid #ebebeb;
+        }
+
+        .cancel-img{
+          left: 85%;
+          top: 100%;
+        }
    }
  
    

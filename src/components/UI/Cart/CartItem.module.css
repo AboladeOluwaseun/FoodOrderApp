@@ -123,6 +123,13 @@
     }
 }
 
+@media (min-width:992px){
+    .cart-item{
+        height: 40%;
+       
+    }
+}
+
 @media (min-width:1200px){
     .cart-item{
         height: 40%;
